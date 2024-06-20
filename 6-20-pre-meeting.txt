@@ -1,0 +1,82 @@
+# process
+compile linux kernel
+mess with params
+figure out how to test it.. something with running a binary
+write some appropriate test binary or use an existing one
+
+specifically fiddling with HZ - how often the kernel interrupts user processes
+do it some kinda structured way so we can spit out a graph at the end
+
+need some way to measure program running time
+do some kinda structured thing and figure out how long it runs
+
+# presentation
+- what it is
+- how are we solving it
+- license
+- someone, probably ainslee, should go ask Moin where the requirements are
+
+# machine
+ideal machine: 64 core CPU from the last five years
+
+here's the one ainslee has access to:
+Architecture:            x86_64
+  CPU op-mode(s):        32-bit, 64-bit
+  Address sizes:         43 bits physical, 48 bits virtual
+  Byte Order:            Little Endian
+CPU(s):                  64
+  On-line CPU(s) list:   0-63
+Vendor ID:               [Redacted] 
+  Model name:            [Redacted]
+    CPU family:          23
+    Model:               49
+    Thread(s) per core:  1
+    Core(s) per socket:  64
+    Socket(s):           1
+    Stepping:            0
+    Frequency boost:     disabled
+    CPU max MHz:         2087.8899
+    CPU min MHz:         1500.0000
+    BogoMIPS:            3999.73
+    Flags:               [Redacted]
+Virtualization features: 
+  Virtualization:        AMD-V
+Caches (sum of all):     
+  L1d:                   2 MiB (64 instances)
+  L1i:                   2 MiB (64 instances)
+  L2:                    32 MiB (64 instances)
+  L3:                    256 MiB (16 instances)
+NUMA:                    
+  NUMA node(s):          1
+  NUMA node0 CPU(s):     0-63
+Vulnerabilities:         
+  Gather data sampling:  Not affected
+  Itlb multihit:         Not affected
+  L1tf:                  Not affected
+  Mds:                   Not affected
+  Meltdown:              Not affected
+  Mmio stale data:       Not affected
+  Retbleed:              Mitigation; untrained return thunk; SMT disabled
+  Spec rstack overflow:  Mitigation; SMT disabled
+  Spec store bypass:     Mitigation; Speculative Store Bypass disabled via prctl and secco
+                         mp
+  Spectre v1:            Mitigation; usercopy/swapgs barriers and __user pointer sanitizat
+                         ion
+  Spectre v2:            Mitigation; Retpolines; IBPB conditional; STIBP disabled; RSB fil
+                         ling; PBRSB-eIBRS Not affected; BHI Not affected
+  Srbds:                 Not affected
+  Tsx async abort:       Not affected
+
+we may lose access to this machine part of the way through the project if
+it's needed for other work, although we'll have a heads up
+
+also, only ainslee would be able to actually execute stuff on it
+due to credentials so that would be a bottleneck on our work
+
+in ainslee's opinion we shouldn't use this one unless it's significantly faster
+than the alternative just because it doesn't seem worth the hassle
+
+# action items
+TODO: Scott to get environment set up
+TODO: Wade to look into git repos with benchmarking stuff like calculating pi
+TODO: Ainslee to look into finding other compute resouces [done]
