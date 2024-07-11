@@ -1,5 +1,3 @@
-
-
     Our project will involve compiling the linux kernel with different parameters (namely varying HZ), and measuring its impact on performance.
   The problem is primarily that it's not clear what degree of performance advantage is gained from this parameter, and also unclear if there's
   a noticible decline in responsiveness, OS resource management, etc. Ideally, developers of resource-constrained embedded Linux systems would

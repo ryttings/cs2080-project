@@ -1,0 +1,2 @@
+For the kernel we're compiling -- planning on using Ubuntu kernel if possible.
+Also looking into Gentoo compilation.
