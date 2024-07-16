@@ -1,0 +1,108 @@
+Running CPU Tests... (--threads=1)
+    events per second:  4215.55
+    total number of events:              42160
+    events (avg/stddev):           42160.0000/0.00
+Running Memory Tests... (--threads=1)
+    total number of events:              104857600
+    events (avg/stddev):           104857600.0000/0.00
+Running 1K Block Size...
+Sequential Read (1 second):
+    total number of events:              13312831
+    events (avg/stddev):           13312831.0000/0.00
+Random Read (1 second):
+    total number of events:              4087028
+    events (avg/stddev):           4087028.0000/0.00
+Sequential Write (1 second):
+    total number of events:              11049815
+    events (avg/stddev):           11049815.0000/0.00
+Random Write (1 second):
+    total number of events:              4125538
+    events (avg/stddev):           4125538.0000/0.00
+Running 1M Block Size...
+Sequential Read (1 second):
+    total number of events:              61011
+    events (avg/stddev):           61011.0000/0.00
+Random Read (1 second):
+    total number of events:              5460
+    events (avg/stddev):           5460.0000/0.00
+Sequential Write (1 second):
+    total number of events:              41907
+    events (avg/stddev):           41907.0000/0.00
+Random Write (1 second):
+    total number of events:              5836
+    events (avg/stddev):           5836.0000/0.00
+Running File I/O Tests... (--threads=1)
+    total number of events:              107763
+    events (avg/stddev):           107763.0000/0.00
+Running Thread Subsystem Tests... (--threads=1)
+    total number of events:              63743
+    events (avg/stddev):           63743.0000/0.00
+Running Mutex Tests... (--threads=1)
+General statistics:
+    total time:                          0.1041s
+    total number of events:              1
+
+Latency (ms):
+         min:                                  103.99
+         avg:                                  103.99
+         max:                                  103.99
+         95th percentile:                      104.84
+         sum:                                  103.99
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.1040/0.00
+Running CPU Tests... (--threads=16)
+    events per second: 37022.92
+    total number of events:              370274
+    events (avg/stddev):           23142.1250/4660.58
+Running Memory Tests... (--threads=16)
+    total number of events:              104857600
+    events (avg/stddev):           6553600.0000/0.00
+Running 1K Block Size...
+Sequential Read (1 second):
+    total number of events:              104857600
+    events (avg/stddev):           6553600.0000/0.00
+Random Read (1 second):
+    total number of events:              36529531
+    events (avg/stddev):           2283095.6875/542142.35
+Sequential Write (1 second):
+    total number of events:              19180343
+    events (avg/stddev):           1198771.4375/174216.68
+Random Write (1 second):
+    total number of events:              2053123
+    events (avg/stddev):           128320.1875/22943.92
+Running 1M Block Size...
+Sequential Read (1 second):
+    total number of events:              102400
+    events (avg/stddev):           6400.0000/0.00
+Random Read (1 second):
+    total number of events:              40377
+    events (avg/stddev):           2523.5625/767.20
+Sequential Write (1 second):
+    total number of events:              102400
+    events (avg/stddev):           6400.0000/0.00
+Random Write (1 second):
+    total number of events:              14492
+    events (avg/stddev):           905.7500/53.77
+Running File I/O Tests... (--threads=16)
+    total number of events:              114792
+    events (avg/stddev):           7174.5000/117.10
+Running Thread Subsystem Tests... (--threads=16)
+    total number of events:              126135
+    events (avg/stddev):           7883.4375/169.45
+Running Mutex Tests... (--threads=16)
+General statistics:
+    total time:                          0.1763s
+    total number of events:              16
+
+Latency (ms):
+         min:                                  126.03
+         avg:                                  143.78
+         max:                                  176.10
+         95th percentile:                      155.80
+         sum:                                 2300.55
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.1438/0.01
