@@ -54,3 +54,9 @@ Or
 >bash sysbench_testing_bashscript.sh
  
 - The code should proceed to run the benchmarking tests and display the output on your given system.
+
+## Conclusions:
+After running our tests, with example tests attached elsewhere in the repository, we found an interesting trend between the average percentage difference in performance for a machine depending on the number of threads tested by our program.
+When testing only one thread, the 100HZ kernel performed an average of 1% faster than the 1000HZ kernel on nearly every benchmark. 
+However, the opposite became true when we tested 16 threads with the program resulting in an average 1% faster performance of the 1000HZ kernel compared to the 100HZ kernel.
+This leads us toward the conclusion that for low resource machines there is an advantage in lowering the HZ refresh rate, despite only being a minor improvement.
