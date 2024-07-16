@@ -18,14 +18,22 @@ investigation. We intend to provide both to our github repo.
 ## .config file changes:
 - Ensured following configs were set:
 > CONFIG_HZ_PERIODIC=y
+
 > CONFIG_HZ_100=y
+
 > CONFIG_HZ=100
+
 - And ensured the following configs were not set:
 > CONFIG_HZ_250
+
 > CONFIG_HZ_300
+
 > CONFIG_HZ_1000
+
 > CONFIG_NO_HZ_IDLE
+
 > CONFIG_NO_HZ_FULL
+
 > CONFIG_NO_HZ
 
 ## Building Kernel:

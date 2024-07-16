@@ -1,7 +1,0 @@
-sysbench for testing
-
-41,942 events which is like 3 times as fast on 100 HZ
-but it's also in a new computer so who knows lolol
-42,034 events on the 1000 HZ uh oh
-40646 with firfox open on 1000 HZ
-86319 file i/o sequential r/w 1000 hz
