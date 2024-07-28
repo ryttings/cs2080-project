@@ -66,7 +66,7 @@ $ sudo make install
 ```
 
 ## Utilizing our benchmarking program:
-- When using a Ubuntu distribution of Linux: 
+- When using a Debian distribution of Linux such as Ubuntu: 
 
 ```
 $ sudo apt install sysbench
